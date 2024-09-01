@@ -8,8 +8,6 @@ async function getWasm() {
     const [wasm] = await Promise.all([
 	getWasm(),
     ]);
-    console.log(wasm);
-    console.log(`Soma from WebAssembly: ${wasm.instance.exports.soma(1,2)}`);
     
     var a = document.getElementById("a");
     var b = document.getElementById("b");
